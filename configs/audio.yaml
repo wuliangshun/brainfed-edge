@@ -1,0 +1,23 @@
+# Taskbook: 128-2000-3. Supply your real 600-sample corpus split in an NPZ file.
+# data.path is relative to THIS configuration file, not the current directory.
+seed: 42
+device: cpu
+data:
+  source: npz
+  task: audio
+  path: ../data/audio.npz
+  input_dim: 128
+  num_classes: 3
+model:
+  hidden_dim: 2000
+  neuron: mdn
+  timesteps: 24
+  encoding: phase
+federation:
+  clients: 5
+  rounds: 50
+  batch_size: 16
+  learning_rate: 0.005
+aggregation:
+  policy: event
+  keep_ratio: 0.1

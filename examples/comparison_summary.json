@@ -1,0 +1,54 @@
+{
+  "data_source": "synthetic",
+  "groups": [
+    {
+      "neuron": "lif",
+      "policy": "periodic",
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "accuracy_mean": 0.9777777777777779,
+      "accuracy_std_population": 0.01814436846506056,
+      "uplink_payload_bytes_mean": 61824.0
+    },
+    {
+      "neuron": "lif",
+      "policy": "event",
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "accuracy_mean": 0.5777777777777778,
+      "accuracy_std_population": 0.11898058077191861,
+      "uplink_payload_bytes_mean": 20320.0
+    },
+    {
+      "neuron": "mdn",
+      "policy": "periodic",
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "accuracy_mean": 0.9851851851851853,
+      "accuracy_std_population": 0.010475656017578498,
+      "uplink_payload_bytes_mean": 61824.0
+    },
+    {
+      "neuron": "mdn",
+      "policy": "event",
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "accuracy_mean": 0.7037037037037037,
+      "accuracy_std_population": 0.1409355377069663,
+      "uplink_payload_bytes_mean": 20320.0
+    }
+  ],
+  "comparison_scope": "event timing and sparsification change together; use one-factor configs for isolated ablations"
+}

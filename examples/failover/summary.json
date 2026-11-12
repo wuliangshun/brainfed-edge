@@ -1,0 +1,71 @@
+{
+  "package_version": "0.1.0",
+  "data": {
+    "source": "synthetic",
+    "real_sensor_data": false,
+    "generator_seed": 143,
+    "train_samples": 90,
+    "test_samples": 45,
+    "input_dim": 16,
+    "num_classes": 3
+  },
+  "neuron": "mdn",
+  "aggregation_policy": "event",
+  "keep_ratio": 0.25,
+  "seed": 42,
+  "rounds": 8,
+  "aggregation_events": 3,
+  "initial": {
+    "accuracy": 0.28888888888888886,
+    "macro_f1": 0.2304778554778555,
+    "mse": 0.19765433172384897,
+    "samples": 45,
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        13
+      ],
+      [
+        0,
+        1,
+        14
+      ],
+      [
+        5,
+        0,
+        10
+      ]
+    ]
+  },
+  "final": {
+    "accuracy": 0.6444444444444445,
+    "macro_f1": 0.6340579710144928,
+    "mse": 0.15212963024775186,
+    "samples": 45,
+    "confusion_matrix": [
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        10,
+        5,
+        0
+      ],
+      [
+        6,
+        0,
+        9
+      ]
+    ]
+  },
+  "uplink_payload_bytes": 18288,
+  "downlink_payload_bytes": 23184,
+  "dense_uplink_equivalent_bytes": 23184,
+  "control_bytes_estimated": 7392,
+  "elapsed_training_wall_seconds": 0.5112356199988426,
+  "uncommitted_local_rounds": 0,
+  "measurement_scope": "tensor payload only; control size estimated; no physical energy measurement"
+}

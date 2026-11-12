@@ -1,0 +1,26 @@
+# Offline synthetic data. These results are software checks, not sensor benchmarks.
+seed: 42
+device: cpu
+data:
+  source: synthetic
+  task: smoke
+  input_dim: 16
+  num_classes: 3
+  train_samples: 90
+  test_samples: 45
+model:
+  hidden_dim: 24
+  neuron: mdn
+  timesteps: 12
+  encoding: rate
+federation:
+  clients: 5
+  rounds: 8
+  local_epochs: 1
+  batch_size: 15
+  learning_rate: 0.02
+aggregation:
+  policy: event
+  min_interval: 2
+  max_interval: 4
+  keep_ratio: 0.25

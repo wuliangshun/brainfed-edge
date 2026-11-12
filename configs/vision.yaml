@@ -1,0 +1,22 @@
+# Taskbook: 1728-2500-3. Image layout is flattened RGB [3,24,24].
+seed: 42
+device: cpu
+data:
+  source: npz
+  task: vision
+  path: ../data/vision.npz
+  input_dim: 1728
+  num_classes: 3
+model:
+  hidden_dim: 2500
+  neuron: mdn
+  timesteps: 24
+  encoding: latency
+federation:
+  clients: 5
+  rounds: 50
+  batch_size: 16
+  learning_rate: 0.005
+aggregation:
+  policy: event
+  keep_ratio: 0.1

@@ -1,0 +1,66 @@
+{
+  "seed": 42,
+  "device": "cpu",
+  "torch_threads": 1,
+  "data": {
+    "source": "synthetic",
+    "task": "smoke",
+    "path": null,
+    "input_dim": 16,
+    "num_classes": 3,
+    "train_samples": 90,
+    "test_samples": 45
+  },
+  "model": {
+    "hidden_dim": 24,
+    "neuron": "mdn",
+    "timesteps": 12,
+    "encoding": "rate",
+    "threshold": 0.6,
+    "current_gain": 3.0,
+    "lif_decay": 0.8,
+    "dt": 0.2,
+    "tau": 1.0,
+    "eta_a": 0.3,
+    "eta_b": 0.25,
+    "eta_c": 0.0,
+    "eta_d": 0.1,
+    "surrogate_width": 1.0
+  },
+  "federation": {
+    "clients": 5,
+    "rounds": 8,
+    "local_epochs": 1,
+    "batch_size": 15,
+    "learning_rate": 0.02,
+    "dirichlet_alpha": 0.5,
+    "min_client_samples": 2,
+    "clip_grad_norm": 5.0,
+    "offline": {
+      "0": [
+        3,
+        4
+      ]
+    },
+    "flush_final": true
+  },
+  "aggregation": {
+    "policy": "event",
+    "period": 1,
+    "min_interval": 2,
+    "max_interval": 4,
+    "initial_threshold": 1.0,
+    "beta": 1.0,
+    "threshold_floor": 1e-08,
+    "saliency_decay": 0.8,
+    "keep_ratio": 0.25
+  },
+  "network": {
+    "one_way_ms": 3.0,
+    "jitter_ms": 1.0,
+    "drop_probability": 0.0,
+    "rpc_timeout_ms": 80.0,
+    "heartbeat_timeout_ms": 30.0,
+    "control_message_bytes": 96
+  }
+}

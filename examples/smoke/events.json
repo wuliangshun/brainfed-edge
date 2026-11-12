@@ -1,0 +1,50 @@
+[
+  {
+    "round": 2,
+    "event": "aggregate",
+    "leader": 0,
+    "term": 1,
+    "version": 1,
+    "clients": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "threshold_before": 1.0,
+    "forced_final_flush": false
+  },
+  {
+    "round": 5,
+    "event": "aggregate",
+    "leader": 0,
+    "term": 1,
+    "version": 2,
+    "clients": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "threshold_before": 10.903773989528418,
+    "forced_final_flush": false
+  },
+  {
+    "round": 8,
+    "event": "aggregate",
+    "leader": 0,
+    "term": 1,
+    "version": 3,
+    "clients": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "threshold_before": 14.213041936978698,
+    "forced_final_flush": false
+  }
+]

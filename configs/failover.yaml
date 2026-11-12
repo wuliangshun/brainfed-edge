@@ -1,0 +1,19 @@
+seed: 42
+data:
+  source: synthetic
+  task: smoke
+  input_dim: 16
+  num_classes: 3
+  train_samples: 90
+  test_samples: 45
+federation:
+  clients: 5
+  rounds: 8
+  offline:
+    "0": [3, 4]
+aggregation:
+  keep_ratio: 0.25
+network:
+  one_way_ms: 3.0
+  jitter_ms: 1.0
+  drop_probability: 0.0

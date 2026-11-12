@@ -1,0 +1,9 @@
+{
+  "source": "synthetic",
+  "real_sensor_data": false,
+  "generator_seed": 143,
+  "train_samples": 90,
+  "test_samples": 45,
+  "input_dim": 16,
+  "num_classes": 3
+}

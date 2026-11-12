@@ -1,0 +1,22 @@
+# Taskbook: 4800-1000-5. The 1695 original samples are NOT included.
+seed: 42
+device: cpu
+data:
+  source: npz
+  task: radar
+  path: ../data/radar.npz
+  input_dim: 4800
+  num_classes: 5
+model:
+  hidden_dim: 1000
+  neuron: mdn
+  timesteps: 24
+  encoding: burst
+federation:
+  clients: 5
+  rounds: 50
+  batch_size: 16
+  learning_rate: 0.005
+aggregation:
+  policy: event
+  keep_ratio: 0.1

@@ -1,0 +1,50 @@
+{
+  "simulation_only": true,
+  "cases": [
+    {
+      "scenario": "normal",
+      "leader": 0,
+      "term": 1,
+      "sponsor": 0,
+      "elapsed_ms": 14.575569767968307,
+      "wire_messages": 16,
+      "reason": "elected"
+    },
+    {
+      "scenario": "node_0_failed",
+      "leader": 1,
+      "term": 2,
+      "sponsor": 1,
+      "elapsed_ms": 320.0,
+      "wire_messages": 22,
+      "reason": "elected"
+    },
+    {
+      "scenario": "minority_only",
+      "leader": null,
+      "term": 1,
+      "sponsor": 0,
+      "elapsed_ms": 80.0,
+      "wire_messages": 5,
+      "reason": "no_majority"
+    },
+    {
+      "scenario": "partition_minority_sponsor",
+      "leader": null,
+      "term": 1,
+      "sponsor": 0,
+      "elapsed_ms": 80.0,
+      "wire_messages": 5,
+      "reason": "no_majority"
+    },
+    {
+      "scenario": "burst_delay",
+      "leader": 0,
+      "term": 1,
+      "sponsor": 0,
+      "elapsed_ms": 94.57556976796829,
+      "wire_messages": 16,
+      "reason": "elected"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "leader": 0,
+    "term": 1,
+    "sponsor": 0,
+    "elapsed_ms": 14.968722332474181,
+    "wire_messages": 16,
+    "reason": "elected"
+  },
+  {
+    "leader": 1,
+    "term": 2,
+    "sponsor": 1,
+    "elapsed_ms": 160.0,
+    "wire_messages": 14,
+    "reason": "elected"
+  }
+]
